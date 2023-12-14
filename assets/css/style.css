@@ -5,58 +5,67 @@
     box-sizing: border-box;
 }
 :root {
-    --color01:white;
+    --color01:rgb(248, 243, 243);
     --color02:rgb(255, 142, 161);
-    --color03:rgb(152, 20, 20);
+    --color03:rgb(57, 57, 57);
 }
 nav{
+    position: fixed;
+    top: 0;
+
     width: 100%;
+    height: 10vh;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem;
-    position: fixed;
-    top: 0;
-    z-index: 100;
+    align-items: center;
+    
+    padding: 1rem 2rem;
+
 }
 h1{
-    color: var(color01);
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    color var (--color01);
 }
+/* ESTILOS DEL NAV */
 nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     column-gap: 2rem;
+    list-style:none;
+
 }
-nav ul li{
-    list-style: none;
-}
-nav ul li a{
+a{
     text-decoration: none;
+    color: inherit;
+
+}
+nav a{
     color: var(--color01);
     font-size: 1.5rem;
-    transition: 1s;
+    transition: .5s;
+
 }
-nav ul li a:visited{
-    color: var(--color01);
-}
-nav ul li a:hover{
+nav a:hover{
     color: var(--color02);
+
+
 }
-header{
-    width: 100vh;
-    height: 100vh;
-    object-fit: cover;
-    position: relative;
-}
+/* ESTILOS DEL HEADER */
 #info_header{
-    width: 300px;
-    height: 300px;
-    background-color: aquamarine;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+    width: 400px;
+    height: 300px;
+    background-color: aquamarine;
+
 }
+
