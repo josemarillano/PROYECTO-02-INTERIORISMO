@@ -35,7 +35,6 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color01);
     letter-spacing: 2px;
-    
 
 }
 /* ESTILOS DEL NAV */
@@ -60,7 +59,7 @@ nav a{
 
 }
 nav a:hover{
-    color: var(--color02);
+    color: var(--color03);
 
 
 }
@@ -72,20 +71,92 @@ nav a:hover{
     transform: translate(-50%, -50%);
     
     width: 400px;
-    height: 300px;
-    background-color: aquamarine;
-
-}
-#info_header p{
+    border-left: 2px solid var(--color01);
+    padding-left: 2rem;
+    
     color: var(--color01);
-    font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 2rem;
+
+    }
+#info_header p{
+font-size: 1.1rem;
+line-height: 2rem;
+letter-spacing: 1.5px;
+
 
 }
+
 .botton{
-    background-color: var(--color01);
+   background-color: var(--color01); 
+   color: var(--color03);
+   padding: 1rem 3rem;
+   border-radius: 1.5rem;
+   cursor: pointer;
+
+}
+.botton span{
+    color: var(--color03);
+    transition: .5s; 
+}
+
+.botton span:hover{
     color: var(--color02);
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+article{
+    width: 100%;
+
+}
+#articulo_fortalezas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    transform: translate(-30px);
+
+
+}
+.fortalezas{
+    
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 1rem;
+
+    text-align: center;
+
+
+
+}
+.fortalezas img{
+    width: 100px;
+    background-color: var(--color02);
+    border-radius: 50%;
+    padding: 12px;
+
+}
+.fortalezas h4 {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
     
 
     
@@ -93,5 +164,4 @@ nav a:hover{
    
 
 
-}
 
