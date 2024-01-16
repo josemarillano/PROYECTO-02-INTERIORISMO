@@ -3,6 +3,8 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 :root {
     --color01:rgb(239, 233, 233);
@@ -30,13 +32,28 @@ h1{
     letter-spacing: 5px;
     color:var( --color01)
 }
-h2{
+.h2Tipo1{
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color01);
     letter-spacing: 2px;
-
 }
+
+.h2Tipo2{
+    font-size: 2rem;
+    color: var(--color03);
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.h2Tipo3{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--color03);
+}
+h3{
+    font-size: 2.3rem;
+}
+
 /* ESTILOS DEL NAV */
 nav ul{
     display: flex;
@@ -45,18 +62,15 @@ nav ul{
     align-items: center;
     column-gap: 2rem;
     list-style:none;
-
 }
 a{
     text-decoration: none;
     color: inherit;
-
 }
 nav a{
     color: var(--color01);
     font-size: 1.5rem;
     transition: .5s;
-
 }
 nav a:hover{
     color: var(--color03);
@@ -149,25 +163,4 @@ article{
     width: 100px;
     background-color: var(--color02);
     border-radius: 50%;
-    padding: 12px;
-
-}
-.fortalezas h4 {
-    font-size: 1.6rem;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-    
-/* articulo about */
- #articulo_about{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    
- }   
-
-   
-
-
-
+    p
