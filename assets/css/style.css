@@ -262,7 +262,63 @@ align-items: flex-start;
     font-weight: 100;
 
 }
-   
+   /* seccion clientes*/
 
+#articuloClientes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 2rem;
+}
+.esconder{
+    display: none!important;
+}
+#contenedorClientes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 2rem;
+
+}
+.cliente{
+    width: 28%;
+    min-width: 250px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 1rem;
+}
+
+.contenedor_avatar{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+
+}
+.avatar_Fondo{
+    width: 100%;
+    height: 100;
+    border-radius: 50%;
+}
+.avatar_Frente{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: -1rem;
+    background-color:white;
+    padding: 0.3rem
+
+
+}
 
 
