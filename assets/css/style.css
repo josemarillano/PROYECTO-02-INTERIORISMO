@@ -10,6 +10,7 @@
     --color01:rgb(239, 233, 233);
     --color02:rgb(255, 142, 161);
     --color03:rgb(57, 57, 57);
+    --color04:rgb(86, 137, 200) ;
 }
 nav{
     position: fixed;
@@ -54,6 +55,15 @@ h1{
 h3{
     font-size: 2.3rem;
 }
+.colorespecial1{
+    color:var(--color04)!important;
+}
+
+.colorespecial2{
+    color:var(--color02)!important;
+}
+
+
 
 /* ESTILOS DEL NAV */
 nav ul{
@@ -147,6 +157,11 @@ section{
 article{
     width: 100%;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 2rem;
 
 }
 #articulo_fortalezas{
@@ -220,13 +235,7 @@ article{
     padding: 0 1.5rem;
     color: var(--color02);
 }
-#articulo_proyectos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    row-gap: 2rem;
-}
+
 
 /* Estilos seccion poryectos */
 
@@ -264,18 +273,11 @@ align-items: flex-start;
 }
    /* seccion clientes*/
 
-#articuloClientes{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    row-gap: 2rem;
-}
+
 .esconder{
     display: none!important;
 }
-#contenedorClientes{
+.contenedorelementosfila{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -322,3 +324,25 @@ align-items: flex-start;
 }
 
 
+/* estilos sección trabajadores */
+
+.trabajador{
+    width: 22%;
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 1rem;
+}
+.trabajador img{
+    width: 100%;
+    filter: sepia(0.5);
+    border-radius: 20px;
+    transition: 0.5s;
+    
+}
+.trabajador img:hover{
+    filter: sepia(0);
+}
