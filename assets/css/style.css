@@ -10,7 +10,10 @@
     --color01:rgb(239, 233, 233);
     --color02:rgb(255, 142, 161);
     --color03:rgb(57, 57, 57);
-    --color04:rgb(86, 137, 200) ;
+    --color04:rgb(86, 137, 200);
+    --color05:rgb(93, 95, 96);
+    
+
 }
 nav{
     position: fixed;
@@ -169,7 +172,7 @@ article{
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    transform: translateY(-48px);
+    transform: translateY(-111px);
 
 
 }
@@ -335,6 +338,8 @@ align-items: flex-start;
     align-items: flex-start;
     justify-content: flex-start;
     row-gap: 1rem;
+    margin-top: 1rem;
+
 }
 .trabajador img{
     width: 100%;
@@ -345,4 +350,26 @@ align-items: flex-start;
 }
 .trabajador img:hover{
     filter: sepia(0);
+}
+/* estilos casos de exito */
+
+.casosdeexito{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    row-gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1rem;
+}
+
+.casosdeexito img{
+    width: 100%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+.colorespecial5{
+    color: var(--color04);
+    text-align: right;
 }
